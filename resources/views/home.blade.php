@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="{{asset ('/css/style.css')}}"rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <h1>home</h1>
+        <nav class="nav">
             <ul>
+                <li>
+                    <h1>Home</h1>
+                </li>
                 <li>
                     <a href="/welcome"> hello</a>
                 </li>
