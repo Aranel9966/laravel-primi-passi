@@ -14,13 +14,18 @@
                 <li>
                     <h1>Home</h1>
                 </li>
+                @foreach($links as $link)
                 <li>
+                    <a href="/{{$link}}">{{$link}}</a> 
+                </li>
+                @endforeach
+                {{-- <li>
                     <a href="/welcome"> hello</a>
                 </li>
                 <li>
                     <a href="/goodby"> good by</a>
                 </li>
-            </ul>
+            </ul> --}}
         </nav>
     </header>
     

@@ -14,19 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $links = [
+        "Welcome",
+        "Goodbye",
+    ];
+    return view('home', compact('links'));
 });
-Route::get('welcome', function () {
+
+Route::get('Welcome', function () {
     $user = [
         "Angelo",
         "di re"
     ];
     return view('helloword', compact('user'));
 });
-Route::get('goodby', function () {
+Route::get('Goodbye', function () {
     $user = [
         "Angelo",
         "di re"
     ];
-    return view('goodbyword', compact('user'));
+    return view('goodbyeword', compact('user'));
 });
