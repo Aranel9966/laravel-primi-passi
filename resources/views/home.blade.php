@@ -23,9 +23,10 @@
                     <a href="/welcome"> hello</a>
                 </li>
                 <li>
-                    <a href="/goodby"> good by</a>
+                    <a href="/goodbye"> goodbye</a>
                 </li>
-            </ul> --}}
+                --}}
+            </ul> 
         </nav>
     </header>
     
