@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $user = [
+        "Angelo",
+        "di re"
+    ];
+
+    return view('helloword', compact('user'));
 });
