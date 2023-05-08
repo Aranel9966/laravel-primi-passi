@@ -19,7 +19,10 @@ Route::get('/', function () {
         "Goodbye",
     ];
     return view('home', compact('links'));
-});
+})->name('home');
+// echo route('home', ['name' => 'Welcome', 'link' => 'welcome']);
+
+
 
 Route::get('Welcome', function () {
     $user = [
@@ -27,11 +30,12 @@ Route::get('Welcome', function () {
         "di re"
     ];
     return view('helloword', compact('user'));
-});
+})->name('Welcome');
+
 Route::get('Goodbye', function () {
     $user = [
         "Angelo",
         "di re"
     ];
     return view('goodbyeword', compact('user'));
-});
+})->name('Goodbye');

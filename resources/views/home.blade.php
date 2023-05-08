@@ -16,7 +16,7 @@
                 </li>
                 @foreach($links as $link)
                 <li>
-                    <a href="/{{$link}}">{{$link}}</a> 
+                    <a href="{{route($link)}}">{{$link}}</a> 
                 </li>
                 @endforeach
                 {{-- <li>
